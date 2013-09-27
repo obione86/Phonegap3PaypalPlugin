@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="com.huronasolutions.plugins.PaypalPlugin.Paypal"
+      version="0.1.0">
+    <name>Paypal Mobile Plugin</name>
+    <description>Phonegap 3.0 Plugin for accepting Paypal payments uses Paypal REST Mobile SDK</description>
+    <license>MIT</license>
+    <keywords>phonegap,paypal</keywords>
+
+
+    <js-module src="www/Paypal.js" name="Paypal">
+        <clobbers target="window.paypal" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+          
+    <feature name="PayPal">
+        <param name="android-package" value="com.huronasolutions.plugins.PaypalPlugin.PayPal" />
+    </feature>
+        </config-file>
+
+        <source-file src="src/android/Paypal.java" target-dir="src/com/huronasolutions/plugins/PaypalPlugin" />      
+     </platform>  
+          
+</plugin>
