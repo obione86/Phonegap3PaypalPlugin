@@ -1,4 +1,4 @@
-﻿cordova.define("com.huronasolutions.plugins.PaypalPlugin.Paypal", function (require, exports, module) {
+﻿
     var exec = require("cordova/exec");
 
 
@@ -25,4 +25,3 @@
     }
     module.exports = Paypal;
 
-});
