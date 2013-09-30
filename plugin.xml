@@ -17,7 +17,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
           
-    <feature name="PayPal">
+    <feature name="Paypal">
         <param name="android-package" value="com.huronasolutions.plugins.PaypalPlugin" />
     </feature>
         </config-file>

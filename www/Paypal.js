@@ -6,12 +6,12 @@
         pay: function (clientId, email, payerId, payment, environment, completionCallback, cancelCallback) {
 
             function success(args) {
-                if (typeof successCallback === 'function')
+                if (typeof completionCallback === 'function')
                     completionCallback(args);
             }
 
             function fail(args) {
-                if (typeof failCallback === 'function')
+                if (typeof cancelCallback === 'function')
                     cancelCallback(args);
             }
 
